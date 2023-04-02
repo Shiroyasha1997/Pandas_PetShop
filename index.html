@@ -35,6 +35,9 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="ingresar.html">Iniciar sesión</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="carrito.html"><img src="img/Carrito Black.png" style="width: 30px;"></a>
+              </li>
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
@@ -72,10 +75,28 @@
         </button>
       </div>
 
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">¡Bienvenido a Panda's Petshop!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              La mejor tienda de venta de articulos para mascota.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Productos -->
       <div class="container-fluid">
-        <div class="row" style="margin: 20px; padding: 40px; justify-content: space-evenly; font-weight: bold;">
-          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="row" style="margin: 10px; padding: 40px; justify-content: space-evenly; font-weight: bold;">
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3" style="background-color: white; border-radius: 30px; padding: 20px; border: 4px solid black; margin: 5px;">
             <a href="ficha.html"><img src="img/Taste of the Wild.jpg" style="width: 300px;"></a>
             <br>
             <h3 style="margin-top: 20px; color: rgb(69, 128, 69); font-weight: 800;">
@@ -93,7 +114,7 @@
               Agregar al carrito
             </button>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3" style="background-color: white; border-radius: 30px; padding: 20px; border: 4px solid black; margin: 5px;">
             <a href="ficha.html"><img src="img/Taste of the Wild.jpg" style="width: 300px;"></a>
             <br>
             <h3 style="margin-top: 20px; color: rgb(69, 128, 69); font-weight: 800;">
@@ -111,7 +132,7 @@
               Agregar al carrito
             </button>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3" style="background-color: white; border-radius: 30px; padding: 20px; border: 4px solid black; margin: 5px;">
             <a href="ficha.html"><img src="img/Taste of the Wild.jpg" style="width: 300px;"></a>
             <br>
             <h3 style="margin-top: 20px; color: rgb(69, 128, 69); font-weight: 800;">
@@ -129,7 +150,43 @@
               Agregar al carrito
             </button>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3" style="background-color: white; border-radius: 30px; padding: 20px; border: 4px solid black; margin: 5px;">
+            <a href="ficha.html"><img src="img/Taste of the Wild.jpg" style="width: 300px;"></a>
+            <br>
+            <h3 style="margin-top: 20px; color: rgb(69, 128, 69); font-weight: 800;">
+              En Stock</h3>
+            <h4 style="font-weight: 800;">
+              $16.490</h4>
+            Saco de alimento Taste of the Wild Cat<br />
+            Descripción: <br />
+            Taste of the Wild Canyon River <br />
+            Formato 2KG <br />
+            Sabor Trucha y Salmón Ahumado <br />
+            Adulto <br />
+            Stock: 8 Unidades <br />
+            <button class="btn-outline-success" type="submit" style="margin: 30px;">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3" style="background-color: white; border-radius: 30px; padding: 20px; border: 4px solid black; margin: 5px;">
+            <a href="ficha.html"><img src="img/Taste of the Wild.jpg" style="width: 300px;"></a>
+            <br>
+            <h3 style="margin-top: 20px; color: rgb(69, 128, 69); font-weight: 800;">
+              En Stock</h3>
+            <h4 style="font-weight: 800;">
+              $16.490</h4>
+            Saco de alimento Taste of the Wild Cat<br />
+            Descripción: <br />
+            Taste of the Wild Canyon River <br />
+            Formato 2KG <br />
+            Sabor Trucha y Salmón Ahumado <br />
+            Adulto <br />
+            Stock: 8 Unidades <br />
+            <button class="btn-outline-success" type="submit" style="margin: 30px;">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3" style="background-color: white; border-radius: 30px; padding: 20px; border: 4px solid black; margin: 5px;">
             <a href="ficha.html"><img src="img/Taste of the Wild.jpg" style="width: 300px;"></a>
             <br>
             <h3 style="margin-top: 20px; color: rgb(69, 128, 69); font-weight: 800;">
@@ -152,7 +209,7 @@
 
       <!-- Footer -->
       <div class="container">
-        <footer class="py-3 my-4">
+        <footer class="py-3 my-4" style="color: black; font-weight: bold;">
           <ul class="nav justify-content-center border-bottom pb-3 mb-3">
             <li class="nav-item">
               <a href="#" class="nav-link px-2 text-muted">Inicio</a>
@@ -164,7 +221,7 @@
               <a href="#" class="nav-link px-2 text-muted">Nosotros</a>
             </li>
           </ul>
-          <p class="text-center text-muted">© 2023 Panda's PetShop</p>
+          <p class="text-center">© 2023 Panda's PetShop</p>
         </footer>
       </div>
 
@@ -175,5 +232,12 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pjpdYa0gBfr+Q0AGq1I6rX9GZGsL5M+U6ImxUdEuPWeYucYbEWlF1DMyjm+JkQxH" crossorigin="anonymous"></script>
+    <script>
+      var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {
+        keyboard: false
+      })
+      myModal.show()
+    </script>
   </body>
 </html>
