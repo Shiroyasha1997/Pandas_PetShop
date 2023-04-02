@@ -1,0 +1,50 @@
+body {
+  font-family: Verdana;
+}
+
+.nav-item {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 1000;
+}
+
+.btn-outline-success {
+  transition-duration: 0.4s;
+  padding: 5px 20px;
+  font-size: 20px;
+  font-weight: 1000;
+  background-color: rgb(255, 164, 164);
+  border-radius: 12px;
+  color: rgb(0, 0, 0);
+  border: 2px solid black;
+}
+
+.btn-outline-success:hover {
+  background-color: white;
+  color: black;
+}
+
+.menu-superior {
+  text-align: right;
+}
+
+.menu-superior li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.producto {
+  width: 100%;
+}
+
+.ancho-boton {
+  width: 200px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="file"],
+textarea {
+  border-width: 3px !important;
+}
