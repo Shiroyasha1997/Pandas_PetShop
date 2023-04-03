@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PetShop</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body style="background-image: url(img/Background.jpg); background-position: center; background-size: cover;">
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg" style="background-image: url(img/Pink.gif); background-position: center;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index administrador.html"><img src="img/Panda's PetShop.png" style="width: 80px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index administrador.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="mis datos.html">Mis Datos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Administrar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Cerrar Sesion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="carrito.html"><img src="img/Carrito Black.png" style="width: 30px;"></a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+              <button class="btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- mantenedor -->
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="container-fluid" style="padding: 20px; margin: 20px;">
+          <div class="row justify-content-left">
+            <div class="col-sm-12 col-md-4" id="datos">
+            <br><br>
+            <h1 class="font-weight-bold mb-4">Mantenedor de Productos</h1>
+
+            <div class="mb-3">
+              <label for="ID" class="form-text">ID</label>
+              <input 
+                required 
+                placeholder="Ingresa el ID" 
+                type="text" 
+                class="form-control" 
+                id="ID" 
+                aria-describedby="ID"
+              />
+              <div class="invalid-feedback">
+                El campo es obligatorio
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="Categoria" class="form-text">Categoria</label>
+              <div class="selecionador">
+                <select name="Categoria">
+                    <option selected>Gato</option>
+                    <option>Perro</option>
+                    <option>Otros</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="Nombre" class="form-text">Nombre</label>
+              <input
+                required
+                placeholder="Ingresa el nombre"
+                type="text"
+                class="form-control"
+                id="Nombre"
+                aria-describedby="Nombre"
+              />
+              <div class="invalid-feedback">
+                El campo es obligatorio
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="Descripcion" class="form-text">Descripcion</label>
+              <input
+                required
+                placeholder="Descripcion"
+                type="text"
+                class="form-control"
+                id="Descripcion"
+                aria-describedby="Descripcion"
+              />
+              <div class="invalid-feedback">
+                El campo es obligatorio
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="Precio" class="form-text">Precio</label>
+              <input
+                required
+                placeholder="Precio"
+                type="text"
+                class="form-control"
+                id="Precio"
+                aria-describedby="Precio"
+              />
+              <div class="invalid-feedback">
+                El campo es obligatorio
+              </div>
+            </div>
+
+            <!-- foto cliente -->
+            <div class="col-sm-12 col-md-50" id="foto" style="justify-content: right;">
+              <img src="img/Taste of the Wild.jpg" style="width: 50%;" />
+              <br /><br />
+              <div class="mb-3">
+                <input class="form-control" type="file" id="file" />
+              </div>
+            </div>
+
+            <!-- botones -->
+            <br><br>
+            <div class="row" id="botones">
+              <div class="col text-center" style="margin-bottom: 40px;">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+                <button type="submit" class="btn btn-primary">Nuevo</button>
+                <button type="reset" class="btn btn-primary">Eliminar</button>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <!-- Mis Compras -->
+        <h1 style="color: black; font-weight: 800; font-size: 30px; margin-left: 40px; margin-top: 20px;">Mis Compras Anteriores</h1>
+        <div class="table-responsive">
+            <table class="table table-bordered" style="background-color: rgb(184, 184, 184); border: 2px solid black; width: 90%; margin: 40px;">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col" style="font-weight: 1000; font-size: 20px;">ID</th>
+                    <th scope="col" style="font-weight: 1000; font-size: 20px;">Categoria</th>
+                    <th scope="col" style="font-weight: 1000; font-size: 20px;">Nombre</th>
+                    <th scope="col" style="font-weight: 1000; font-size: 20px;">Descripcion</th>
+                    <th scope="col" style="font-weight: 1000; font-size: 20px;">Precio</th>
+                    <th scope="col" style="font-weight: 1000; font-size: 20px;">% Desc. Suscriptor</th>
+                    <th scope="col" style="font-weight: 1000; font-size: 20px;">% Desc. Oferta</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td style="color: black; font-size: 25px;">27</td>
+                <td style="color: black; font-size: 25px;">Gatos</td>
+                <td style="color: black; font-size: 25px;">Saco de alimento Taste of the Wild Cat</td>
+                <td style="color: black; font-size: 25px;">Taste of the Wild Canyon River, Formato 2KG, Sabor Trucha y Salmón Ahumado</td>
+                <td style="color: black; font-size: 25px;">$16.490</td>
+                <td style="color: black; font-size: 25px;">$16.490</td>
+                <td style="color: black; font-size: 25px;">$16.490</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+
+        <!-- Footer -->
+        <div class="container">
+            <footer class="py-3 my-4" style="color: black; font-weight: bold;">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-muted">Inicio</a>
+                </li>
+                <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-muted">Productos</a>
+                </li>
+                <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-muted">Nosotros</a>
+                </li>
+            </ul>
+            <p class="text-center">© 2023 Panda's PetShop</p>
+            </footer>
+        </div>
+
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
