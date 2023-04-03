@@ -41,6 +41,18 @@ body {
   width: 200px;
 }
 
+th,td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+img.ropa {
+  max-height: 100px;
+  max-width: 100px;
+}
+
 input[type="text"],
 input[type="password"],
 input[type="email"],
