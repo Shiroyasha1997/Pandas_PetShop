@@ -153,30 +153,32 @@
             </div>
 
             <div class="mb-3">
-              <label for="password2" class="form-label"
-                >Repetir contraseña</label
-              >
+              <label for="password1" class="form-label">Contraseña</label>
               <input
                 type="password"
                 class="form-control"
-                id="password2"
-                name="password2"
+                id="password1"
+                name="password1"
                 required
-                pattern="^[\w@-]{8,20}$"
+                aria-describedby="password1Help"
               />
-              <div class="invalid-feedback">
-                Las contraseñas no coinciden.
+              <div id="passwordHelp" class="form-text">
+                La contraseña debe tener entre 8 y 20 caracteres, y que esos
+                caracteres sean letras, números, el símbolo @ o el guión.
               </div>
             </div>
 
-            <!-- foto cliente -->
-            <div class="col-sm-12 col-md-50" id="foto">
-              <img src="img/Never Gonna.gif" alt="" />
-              <br /><br />
+            </div>
+
+            <!-- foto usuario -->
+            <div class="col-sm-12 col-md-4 text-center" id="foto" style="margin-top: 15px;">
+              <img src="img/Never Gonna.gif" alt="" style="width: 85%;">
+              <br><br>
               <div class="mb-3">
-                <input class="form-control" type="file" id="file" />
+                <input class="form-control" type="file" id="file">
               </div>
             </div>
+          </div>
 
             <!-- botones -->
             <br><br>

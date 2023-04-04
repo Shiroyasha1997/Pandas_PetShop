@@ -52,25 +52,15 @@
 
       <!-- titulo -->
       <div class="text-center">
-        <h1 style="margin-top: 20px; font-weight: 1000;">Mantenedor de Productos</h1>
+        <h1 style="margin-top: 20px; font-weight: 1000;">Mantenedor de Bodega</h1>
       </div>
       <br>
 
-      <!-- formulario de producto -->
+      <!-- formulario de bodega -->
       <form class="row g-0 needs-validation" novalidate>
         <div class="container-fluid" style="font-weight: bold;">
           <div class="row justify-content-center" style="margin: 40px;">
             <div class="col-sm-12 col-md-4" id="datos">
-
-              <div class="mb-3">
-                <label for="ID" class="form-label">ID</label>
-                <input required placeholder="Escribe el ID" 
-                    type="text" class="form-control" 
-                    id="ID" aria-describedby="ID">
-                <div class="invalid-feedback">
-                  El campo es obligatorio
-                </div>
-              </div>
 
               <div class="mb-3">
                 <label for="Categoria" class="form-label">Categoria</label>
@@ -94,40 +84,10 @@
               </div>
 
               <div class="mb-3">
-                <label for="Descripcion" class="form-label">Descripcion</label>
-                <input required placeholder="Escribe la Descripcion" 
-                    type="text" class="form-control" 
-                    id="Descripcion" aria-describedby="Descripcion">
-                <div class="invalid-feedback">
-                  El campo es obligatorio
-                </div>
-              </div>
-
-              <div class="mb-3">
-                <label for="Precio" class="form-label">Precio</label>
-                <input required placeholder="Escribe el Precio" 
-                    type="text" class="form-control" 
-                    id="Precio" aria-describedby="Precio">
-                <div class="invalid-feedback">
-                  El campo es obligatorio
-                </div>
-              </div>
-
-              <div class="mb-3">
-                <label for="Descuento Suscriptor" class="form-label">Descuento Suscriptor</label>
-                <input required placeholder="Escribe el Precio" 
-                    type="text" class="form-control" 
-                    id="Descuento Suscriptor" aria-describedby="Descuento Suscriptor">
-                <div class="invalid-feedback">
-                  El campo es obligatorio
-                </div>
-              </div>
-
-              <div class="mb-3">
-                <label for="Descuento Oferta" class="form-label">Descuento Oferta</label>
-                <input required placeholder="Escribe el Precio" 
-                    type="text" class="form-control" 
-                    id="Descuento Oferta" aria-describedby="Descuento Oferta">
+                <label for="Cantidad" class="form-label">Cantidad</label>
+                <input required placeholder="" 
+                    type="number" class="form-control" 
+                    id="Cantidad" aria-describedby="Cantidad">
                 <div class="invalid-feedback">
                   El campo es obligatorio
                 </div>
@@ -136,38 +96,35 @@
               </div>
 
               <!-- foto producto -->
-              <div class="col-sm-12 col-md-4 text-center" id="foto" style="margin-top: 53px;">
-                <img src="img/Taste of the Wild.jpg" alt="" style="width: 85%;">
+              <div class="col-sm-12 col-md-4 text-center" id="foto">
+                <img src="img/Taste of the Wild.jpg" alt="" style="width: 30%;">
                 <br><br>
                 <div class="mb-3">
                   <input class="form-control" type="file" id="file">
                 </div>
               </div>
-            </div>
 
-            <!-- botones -->
-            <div class="row" id="botones">
+              <!-- botones -->
+              <div class="row" id="botones">
                 <div class="col text-center" style="margin: 40px;">
-                  <button type="submit" class="btn btn-primary">Guardar</button>
-                  <button type="reset" class="btn btn-primary">Nuevo</button>
-                  <button type="reset" class="btn btn-primary">Borrar</button>
+                  <button type="submit" class="btn btn-primary">Nuevo</button>
+                  <button type="submit" class="btn btn-primary">Agregar</button>
                 </div>
+              </div>
             </div>
           </div>
         </form>
 
-        <!-- Tabla Producto -->
-        <div class="table-responsive">
+        <!-- Tabla Bodega -->
+        <div class="table-responsive justify-content-center">
           <table class="table table-bordered" style="background-color: rgb(184, 184, 184); border: 2px solid black; width: 90%; margin: auto;">
             <thead class="table-dark">
               <tr>
                 <th scope="col" style="font-weight: 1000; font-size: 20px;">ID</th>
                 <th scope="col" style="font-weight: 1000; font-size: 20px;">Categoria</th>
                 <th scope="col" style="font-weight: 1000; font-size: 20px;">Nombre</th>
-                <th scope="col" style="font-weight: 1000; font-size: 20px;">Descripcion</th>
-                <th scope="col" style="font-weight: 1000; font-size: 20px;">Precio</th>
-                <th scope="col" style="font-weight: 1000; font-size: 20px;">% Desc. Suscriptor</th>
-                <th scope="col" style="font-weight: 1000; font-size: 20px;">% Desc. Oferta</th>
+                <th scope="col" style="font-weight: 1000; font-size: 20px;">Estado</th>
+                <th scope="col" style="font-weight: 1000; font-size: 20px;">Opciones</th>
               </tr>
             </thead>
             <tbody>
@@ -175,10 +132,8 @@
                 <td style="color: black; font-size: 25px;">27</td>
                 <td style="color: black; font-size: 25px;">Gatos</td>
                 <td style="color: black; font-size: 25px;">Saco de alimento Taste of the Wild Cat</td>
-                <td style="color: black; font-size: 25px;">Taste of the Wild Canyon River, Formato 2KG, Sabor Trucha y Salmón Ahumado</td>
-                <td style="color: black; font-size: 25px;">$16.490</td>
-                <td style="color: black; font-size: 25px;">$16.490</td>
-                <td style="color: black; font-size: 25px;">$16.490</td>
+                <td style="color: black; font-size: 25px;">Vendido</td>
+                <td style="color: black; font-size: 25px;">Eliminar</td>
               </tr>
             </tbody>
           </table>
