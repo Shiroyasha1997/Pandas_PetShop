@@ -65,7 +65,7 @@
               <div class="mb-3">
                 <label for="Categoria" class="form-label">Categoria</label>
                 <div class="selecionador">
-                  <select name="Categoria" style="width: 20%; font-weight: bold;">
+                  <select name="Categoria" style="width: 50%; height: 40px; font-weight: bold;">
                     <option selected>Gato</option>
                     <option>Perro</option>
                     <option>Otros</option>
@@ -74,12 +74,13 @@
               </div>
 
               <div class="mb-3">
-                <label for="Nombre" class="form-label">Nombre</label>
-                <input required placeholder="Escribe el Nombre" 
-                    type="text" class="form-control" 
-                    id="Nombre" aria-describedby="Nombre">
-                <div class="invalid-feedback">
-                  El campo es obligatorio
+                <label for="Categoria" class="form-label">Producto</label>
+                <div class="selecionador">
+                  <select name="Categoria" style="width: 50%; height: 40px; font-weight: bold;">
+                    <option selected>Taste of The Wild</option>
+                    <option>Fit Formula</option>
+                    <option>Raza</option>
+                  </select>
                 </div>
               </div>
 
@@ -97,11 +98,7 @@
 
               <!-- foto producto -->
               <div class="col-sm-12 col-md-4 text-center" id="foto">
-                <img src="img/Taste of the Wild.jpg" alt="" style="width: 30%;">
-                <br><br>
-                <div class="mb-3">
-                  <input class="form-control" type="file" id="file">
-                </div>
+                <img src="img/Taste of the Wild.jpg" alt="" style="width: 40%;">
               </div>
 
               <!-- botones -->
@@ -133,7 +130,11 @@
                 <td style="color: black; font-size: 25px;">Gatos</td>
                 <td style="color: black; font-size: 25px;">Saco de alimento Taste of the Wild Cat</td>
                 <td style="color: black; font-size: 25px;">Vendido</td>
-                <td style="color: black; font-size: 25px;">Eliminar</td>
+                <td style="color: black; font-size: 25px;">
+                  <button class="btn-outline-success" type="submit">
+                  Eliminar
+                  </button>
+                </td>
               </tr>
             </tbody>
           </table>
