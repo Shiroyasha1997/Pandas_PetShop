@@ -99,31 +99,10 @@
       ¡Concursa por un articulo! <br />
       Por compras sobre $20.000, participa por uno de estos articulos
     </h1>
+
     <div class="table-responsive">
-      <table id="tblCategorias" style="border-collapse: collapse; border: 2px solid black; background-color: grey; width: 90%; margin: auto;">
-        <script>
-          $(document).ready(function () {
-            $.get("http://fakestoreapi.com/products", function (data) {
-              var i = 0;
-              var table = $("#tblCategorias");
-              var row = $("<tr></tr>");
-              $.each(data, function (index, item) {
-                var td1 = `<td><img class="ropa" src="${item.image}"></td>`;
-                var td2 = `<td><div>$${item.price}</div><div>${item.title}</div></td>`;
-                var col = `<td>${td1}${td2}</td>`;
-                row.append(col);
-                i++;
-                if (i % 3 == 0) {
-                  table.append(row);
-                  row = $("<tr></tr>");
-                }
-              });
-              if (i % 3 != 0) {
-                table.append(row);
-              }
-            });
-          });
-        </script>
+      <table id="tblCategorias" 
+        style="border-collapse: collapse; border: 2px solid black; background-color: grey; width: 90%; margin: auto;">
       </table>
     </div>
 
