@@ -12,278 +12,227 @@
       crossorigin="anonymous"
     />
   </head>
-  <body style="background-image: url(img/Background.jpg); background-position: center; background-size: cover;">
+  <body style="background-image: url(img/Background.jpg); background-position: center; background-size: auto;">
 
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg" style="background-image: url(img/Pink.gif); background-position: center;">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index administrador.html"><img src="img/Panda's PetShop.png" style="width: 80px;"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index administrador.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Mis Datos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="administracion.html">Administrar</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Cerrar Sesion</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"><img src="img/Carrito Black.png" style="width: 30px;"></a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
-              <button class="btn-outline-success" type="submit">Buscar</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-
-      <!-- titulo -->
-      <div class="text-center">
-        <h1 style="margin-top: 20px; font-weight: 1000;">Mantenedor de Usuarios</h1>
-      </div>
-      <br>
-
-      <!-- formulario de usuario -->
-      <form class="row g-0 needs-validation" novalidate>
-        <div class="container-fluid" style="font-weight: bold;">
-          <div class="row justify-content-center" style="margin: 40px;">
-            <div class="col-sm-12 col-md-4" id="datos">
-
-              <div class="mb-3">
-                <label for="ID" class="form-label">ID</label>
-                <input required placeholder="Escribe el ID" 
-                    type="text" class="form-control" 
-                    id="ID" aria-describedby="ID">
-                <div class="invalid-feedback">
-                  El campo es obligatorio
-                </div>
-              </div>
-
-              <div class="mb-3">
-                <label for="Tipo de Usuario" class="form-label">Tipo de Usuario</label>
-                <div class="radio">
-                  <label><input style="margin: 10px;" type="radio" name="optradio" checked>Usuario</label>
-                  <label><input style="margin: 10px;" type="radio" name="optradio" >Administrador</label>
-                </div>
-              </div>
-
-              <div class="mb-3">
-                <label for="rut" class="form-label">RUT</label>
-                <input
-                  required
-                  placeholder="Ej 10123123-K"
-                  type="text"
-                  class="form-control"
-                  id="rut"
-                  aria-describedby="rutHelp"
-                />
-                <div class="invalid-feedback">
-                  El campo es obligatorio
-                </div>
-              </div>
-
-              <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input
-                  required
-                  placeholder="Ingresa tu Nombre"
-                  type="text"
-                  class="form-control"
-                  id="nombre"
-                  aria-describedby="nombre"
-                />
-                <div class="invalid-feedback">
-                  El campo es obligatorio
-                </div>
-              </div>
-  
-              <div class="mb-3">
-                <label for="apellido" class="form-label">Apellido</label>
-                <input
-                  required
-                  placeholder="Ingresa tu Apellido"
-                  type="text"
-                  class="form-control"
-                  id="apellido"
-                  aria-describedby="apellido"
-                />
-                <div class="invalid-feedback">
-                  El campo es obligatorio
-                </div>
-              </div>
-
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input 
-                  required 
-                  placeholder="Ingresa tu email" 
-                  type="email" 
-                  class="form-control" 
-                  id="email" 
-                  aria-describedby="email"
-                />
-                <div class="invalid-feedback">
-                  El campo es obligatorio
-                </div>
-              </div>
-
-              <div class="mb-3">
-                <label for="Direccion" class="form-label">Direccion</label>
-                <input
-                  required
-                  placeholder="Ingresa tu Direccion"
-                  type="text"
-                  class="form-control"
-                  id="Direccion"
-                  aria-describedby="Direccion"
-                />
-                <div class="invalid-feedback">
-                  El campo es obligatorio
-                </div>
-              </div>
-
-              <div class="mb-3 form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="exampleCheck1"
-                />
-                <label class="form-check-label" for="exampleCheck1"
-                  >Con suscripción</label
-                >
-                <div id="rutHelp" class="form-text">
-                  Suscripcion con un aporte de $3.000 mensuales y obtener un 5% de descuento en mis compras.
-                </div>
-              </div>
-
-              <div class="mb-3">
-                <label for="password1" class="form-label">Contraseña</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="password1"
-                  name="password1"
-                  required
-                  aria-describedby="password1Help"
-                />
-                <div id="passwordHelp" class="form-text">
-                  La contraseña debe tener entre 8 y 20 caracteres, y que esos
-                  caracteres sean letras, números, el símbolo @ o el guión.
-                </div>
-              </div>
-
-              </div>
-
-              <!-- foto usuario -->
-              <div class="col-sm-12 col-md-4 text-center" id="foto" style="margin-top: 15px;">
-                <img src="img/Never Gonna.gif" alt="" style="width: 85%;">
-                <br><br>
-                <div class="mb-3">
-                  <input class="form-control" type="file" id="file">
-                </div>
-              </div>
-            </div>
-
-            <!-- botones -->
-            <div class="row" id="botones">
-                <div class="col text-center" style="margin: 40px;">
-                  <button type="submit" class="btn btn-primary">Guardar</button>
-                  <button type="reset" class="btn btn-primary">Nuevo</button>
-                  <button type="reset" class="btn btn-primary">Eliminar</button>
-                </div>
-            </div>
-          </div>
-        </form>
-
-        <!-- Tabla Usuario -->
-        <div class="table-responsive">
-          <table class="table table-bordered" style="background-color: rgb(184, 184, 184); border: 2px solid black; width: 90%; margin: auto;">
-            <thead class="table-dark">
-              <tr>
-                <th scope="col" style="font-weight: 1000; font-size: 20px;">ID</th>
-                <th scope="col" style="font-weight: 1000; font-size: 20px;">Tipo Usuario</th>
-                <th scope="col" style="font-weight: 1000; font-size: 20px;">RUT</th>
-                <th scope="col" style="font-weight: 1000; font-size: 20px;">Nombre</th>
-                <th scope="col" style="font-weight: 1000; font-size: 20px;">Apellido</th>
-                <th scope="col" style="font-weight: 1000; font-size: 20px;">Direccion</th>
-                <th scope="col" style="font-weight: 1000; font-size: 20px;">Con Subscripcion</th>
-                <th scope="col" style="font-weight: 1000; font-size: 20px;">Imagen</th>
-                <th scope="col" style="font-weight: 1000; font-size: 20px;">Opciones</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td style="color: black; font-size: 25px;">210</td>
-                <td style="color: black; font-size: 25px;">Cliente</td>
-                <td style="color: black; font-size: 25px;">9.355.677-9</td>
-                <td style="color: black; font-size: 25px;">Felipe</td>
-                <td style="color: black; font-size: 25px;">Camiroaga</td>
-                <td style="color: black; font-size: 25px;">San Guillermo, Chicureo</td>
-                <td style="color: black; font-size: 25px;">SI</td>
-                <td><img src="img/Felipito.jpg" style="width: 120px;"></td>
-                <td style="color: black; font-size: 25px;">
-                  <button class="btn-outline-success" type="submit">
-                  Eliminar
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td style="color: black; font-size: 25px;">210</td>
-                <td style="color: black; font-size: 25px;">Cliente</td>
-                <td style="color: black; font-size: 25px;">9.355.677-9</td>
-                <td style="color: black; font-size: 25px;">Felipe</td>
-                <td style="color: black; font-size: 25px;">Camiroaga</td>
-                <td style="color: black; font-size: 25px;">San Guillermo, Chicureo</td>
-                <td style="color: black; font-size: 25px;">SI</td>
-                <td><img src="img/Felipito.jpg" style="width: 120px;"></td>
-                <td style="color: black; font-size: 25px;">
-                  <button class="btn-outline-success" type="submit">
-                  Eliminar
-                  </button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <!-- Footer -->
-        <div class="container">
-          <footer class="py-3 my-4" style="color: black; font-weight: bold;">
-            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-              <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-muted">Inicio</a>
-              </li>
-              <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-muted">Productos</a>
-              </li>
-              <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-muted">Nosotros</a>
-              </li>
-            </ul>
-            <p class="text-center">© 2023 Panda's PetShop</p>
-          </footer>
-        </div>
-      </div>
-
+    <!-- Navbar -->
+    <div 
+      id="menu-superior">
     </div>
+
+    <!-- titulo -->
+    <div class="text-center">
+      <h1 style="margin-top: 20px; font-weight: 1000;">Mantenedor de Usuarios</h1>
+    </div>
+    <br>
+
+    <!-- formulario de cliente -->
+    <div class="container-fluid" style="font-weight: bold;">
+      <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-4">
+          <!-- Inicio form -->
+          <form method="POST" id="formulario1" action="recibir_datos">
+
+            <div class="form-group">
+              <br>
+              <label for="ID">ID</label>
+              <input 
+                type="text"
+                id="ID"
+                name="ID"
+                class="form-control"
+                placeholder="Escribe el ID"
+              />
+              <div class="invalid-feedback">
+                El campo es obligatorio
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <br>
+              <label for="Tipo de Usuario">Tipo de Usuario</label>
+              <div class="radio">
+                <label><input style="margin: 10px;" type="radio" name="optradio" checked>Usuario</label>
+                <label><input style="margin: 10px;" type="radio" name="optradio" >Administrador</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <br>
+              <label for="rut">RUT</label>
+              <input
+                type="text"
+                id="rut"
+                name="rut"
+                class="form-control"
+                placeholder="Ej 12345678-5"
+                value=""
+              />
+            </div>
+
+            <div class="form-group">
+              <br>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                placeholder="Ingrese su email aquí"
+                value=""
+              />
+            </div>
+
+            <div class="form-group">
+              <br>
+              <label for="direccion">Direccion</label>
+              <textarea
+                type="direccion"
+                id="direccion"
+                name="direccion"
+                class="form-control"
+                placeholder="Ingrese su direccion"
+                value=""
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <br>
+              <label for="password">Contraseña</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                class="form-control"
+                placeholder="Ingresar contraseña del al menos 5 caracteres"
+                value=""
+              />
+            </div>
+
+            <div class="form-group">
+              <br>
+              <label for="password2">Repetir Contraseña</label>
+              <input
+                type="password"
+                id="password2"
+                name="password2"
+                class="form-control"
+                placeholder="Repetir contraseña digitada anteriormente"
+                value=""
+              />
+            </div>
+
+            <div class="mb-3 form-check">
+              <br>
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >Con suscripción</label
+              >
+              <div id="rutHelp" class="form-text">
+                Deseo suscribirme con un aporte de $3.000 mensuales y obtener un 5% de descuento en mis compras.
+              </div>
+            </div>
+
+            <!-- foto usuario -->
+            <div class="form-group" id="foto">
+              <img src="img/Never Gonna.gif" alt="" style="width: 85%;">
+              <br><br>
+              <div class="mb-3">
+                <input class="form-control" type="file" id="file">
+              </div>
+            </div>
+
+            <div class="row" id="botones">
+              <div class="col text-center" style="margin: 40px;">
+                <button type="submit" class="btn btn-primary btn-lg">Guardar</button>
+                <button type="reset" class="btn btn-primary btn-lg">Nuevo</button>
+                <button type="reset" class="btn btn-primary btn-lg">Eliminar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tabla Usuario -->
+    <div class="table-responsive">
+      <table class="table table-bordered" style="background-color: rgb(184, 184, 184); border: 2px solid black; width: 90%; margin: auto;">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col" style="font-weight: 1000; font-size: 20px;">ID</th>
+            <th scope="col" style="font-weight: 1000; font-size: 20px;">Tipo Usuario</th>
+            <th scope="col" style="font-weight: 1000; font-size: 20px;">RUT</th>
+            <th scope="col" style="font-weight: 1000; font-size: 20px;">Nombre</th>
+            <th scope="col" style="font-weight: 1000; font-size: 20px;">Apellido</th>
+            <th scope="col" style="font-weight: 1000; font-size: 20px;">Direccion</th>
+            <th scope="col" style="font-weight: 1000; font-size: 20px;">Con Subscripcion</th>
+            <th scope="col" style="font-weight: 1000; font-size: 20px;">Imagen</th>
+            <th scope="col" style="font-weight: 1000; font-size: 20px;">Opciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="color: black; font-size: 25px;">210</td>
+            <td style="color: black; font-size: 25px;">Cliente</td>
+            <td style="color: black; font-size: 25px;">9.355.677-9</td>
+            <td style="color: black; font-size: 25px;">Felipe</td>
+            <td style="color: black; font-size: 25px;">Camiroaga</td>
+            <td style="color: black; font-size: 25px;">San Guillermo, Chicureo</td>
+            <td style="color: black; font-size: 25px;">SI</td>
+            <td><img src="img/Felipito.jpg" style="width: 120px;"></td>
+            <td style="color: black; font-size: 25px;">
+              <button type="submit" class="btn btn-primary btn-lg">Eliminar</button>
+            </td>
+          </tr>
+          <tr>
+            <td style="color: black; font-size: 25px;">210</td>
+            <td style="color: black; font-size: 25px;">Cliente</td>
+            <td style="color: black; font-size: 25px;">9.355.677-9</td>
+            <td style="color: black; font-size: 25px;">Felipe</td>
+            <td style="color: black; font-size: 25px;">Camiroaga</td>
+            <td style="color: black; font-size: 25px;">San Guillermo, Chicureo</td>
+            <td style="color: black; font-size: 25px;">SI</td>
+            <td><img src="img/Felipito.jpg" style="width: 120px;"></td>
+            <td style="color: black; font-size: 25px;">
+              <button type="submit" class="btn btn-primary btn-lg">Eliminar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Footer -->
+    <div 
+      id="footer">
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/script.js"></script>
+      crossorigin="anonymous">
+    </script>
+    <script 
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
+      crossorigin="anonymous">
+    </script>
+    <script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+      integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA=="
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer">
+    </script>
+    <script 
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script 
+      src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js">
+    </script>
+    <script 
+      src="js/script.js">
+    </script>
   </body>
 </html>

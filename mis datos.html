@@ -14,222 +14,197 @@
   </head>
   <body style="background-image: url(img/Background.jpg); background-position: center; background-size: cover;">
 
-      <!-- cabecera -->
-      <nav class="navbar navbar-expand-lg" style="background-image: url(img/Pink.gif); background-position: center;">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index usuario.html"><img src="img/Panda's PetShop.png" style="width: 80px;"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index usuario.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="nosotros usuario.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="mis datos.html">Mis Datos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="mis compras.html">Mis Compras Anteriores</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Cerrar Sesion</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="carrito.html"><img src="img/Carrito Black.png" style="width: 30px;"></a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
-              <button class="btn-outline-success" type="submit">Buscar</button>
-            </form>
+    <!-- Navbar -->
+    <div 
+      id="menu-superior">
+    </div>
+
+    <!-- formulario de cliente -->
+    <form class="row g-0 needs-validation" novalidate>
+      <div class="container-fluid">
+        <!-- todos los datos del cliente -->
+        <div class="row justify-content-center">
+          <!-- datos del cliente -->
+          <div class="col-sm-12 col-md-4" id="datos">
+          <br><br>
+          <h1 class="font-weight-bold mb-4">Mis Datos</h1>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input 
+              required 
+              placeholder="Lumora@gmail.com" 
+              type="email" 
+              class="form-control" 
+              id="email" 
+              aria-describedby="email"
+            />
+            <div class="invalid-feedback">
+              El campo es obligatorio
+            </div>
+          </div>
+
+
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input
+              required
+              placeholder="Luisa"
+              type="text"
+              class="form-control"
+              id="nombre"
+              aria-describedby="nombre"
+            />
+            <div class="invalid-feedback">
+              El campo es obligatorio
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input
+              required
+              placeholder="Morales"
+              type="text"
+              class="form-control"
+              id="apellido"
+              aria-describedby="apellido"
+            />
+            <div class="invalid-feedback">
+              El campo es obligatorio
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="rut" class="form-label">RUT</label>
+            <input
+              required
+              placeholder="21897347-1"
+              type="text"
+              class="form-control"
+              id="rut"
+              aria-describedby="rutHelp"
+            />
+            <div id="rutHelp" class="form-text">
+              RUT sin puntos y con guión.
+            </div>
+            <div class="invalid-feedback">El campo RUT es obligatorio</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="direccion" class="form-label">Direccion</label>
+            <input
+              required
+              placeholder="Lastarrias 2020"
+              type="text"
+              class="form-control"
+              id="direccion"
+              aria-describedby="direccion"
+            />
+            <div class="invalid-feedback">
+              El campo es obligatorio
+            </div>
+          </div>
+
+          <div class="mb-3 form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+            <label class="form-check-label" for="exampleCheck1"
+              >Con suscripción</label
+            >
+            <div id="rutHelp" class="form-text">
+              Deseo suscribirme con un aporte de $3.000 mensuales y obtener un 5% de descuento en mis compras.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="password1" class="form-label">Contraseña</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password1"
+              name="password1"
+              required
+              aria-describedby="password1Help"
+              required
+              placeholder="********"
+            />
+            <div id="passwordHelp" class="form-text">
+              La contraseña debe tener entre 8 y 20 caracteres, y que esos
+              caracteres sean letras, números, el símbolo @ o el guión.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="password1" class="form-label"> Repetir Contraseña</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password1"
+              name="password1"
+              required
+              aria-describedby="password1Help"
+              required
+              placeholder="********"
+            />
+          </div>
+
+          </div>
+
+          <!-- foto usuario -->
+          <div class="col-sm-12 col-md-4 text-center" id="foto" style="margin-top: 190px;">
+            <img src="img/Never Gonna.gif" alt="" style="width: 85%;">
+            <br><br>
+            <div class="mb-3">
+              <input class="form-control" type="file" id="file">
+            </div>
           </div>
         </div>
-      </nav>
 
-      <!-- formulario de cliente -->
-      <form class="row g-0 needs-validation" novalidate>
-        <div class="container-fluid">
-          <!-- todos los datos del cliente -->
-          <div class="row justify-content-center">
-            <!-- datos del cliente -->
-            <div class="col-sm-12 col-md-4" id="datos">
-            <br><br>
-            <h1 class="font-weight-bold mb-4">Mis Datos</h1>
-
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input 
-                required 
-                placeholder="Lumora@gmail.com" 
-                type="email" 
-                class="form-control" 
-                id="email" 
-                aria-describedby="email"
-              />
-              <div class="invalid-feedback">
-                El campo es obligatorio
-              </div>
-            </div>
-
-
-            <div class="mb-3">
-              <label for="nombre" class="form-label">Nombre</label>
-              <input
-                required
-                placeholder="Luisa"
-                type="text"
-                class="form-control"
-                id="nombre"
-                aria-describedby="nombre"
-              />
-              <div class="invalid-feedback">
-                El campo es obligatorio
-              </div>
-            </div>
-
-            <div class="mb-3">
-              <label for="apellido" class="form-label">Apellido</label>
-              <input
-                required
-                placeholder="Morales"
-                type="text"
-                class="form-control"
-                id="apellido"
-                aria-describedby="apellido"
-              />
-              <div class="invalid-feedback">
-                El campo es obligatorio
-              </div>
-            </div>
-
-            <div class="mb-3">
-              <label for="rut" class="form-label">RUT</label>
-              <input
-                required
-                placeholder="21897347-1"
-                type="text"
-                class="form-control"
-                id="rut"
-                aria-describedby="rutHelp"
-              />
-              <div id="rutHelp" class="form-text">
-                RUT sin puntos y con guión.
-              </div>
-              <div class="invalid-feedback">El campo RUT es obligatorio</div>
-            </div>
-
-            <div class="mb-3">
-              <label for="direccion" class="form-label">Direccion</label>
-              <input
-                required
-                placeholder="Lastarrias 2020"
-                type="text"
-                class="form-control"
-                id="direccion"
-                aria-describedby="direccion"
-              />
-              <div class="invalid-feedback">
-                El campo es obligatorio
-              </div>
-            </div>
-
-            <div class="mb-3 form-check">
-              <input
-                type="checkbox"
-                class="form-check-input"
-                id="exampleCheck1"
-              />
-              <label class="form-check-label" for="exampleCheck1"
-                >Con suscripción</label
-              >
-              <div id="rutHelp" class="form-text">
-                Deseo suscribirme con un aporte de $3.000 mensuales y obtener un 5% de descuento en mis compras.
-              </div>
-            </div>
-
-            <div class="mb-3">
-              <label for="password1" class="form-label">Contraseña</label>
-              <input
-                type="password"
-                class="form-control"
-                id="password1"
-                name="password1"
-                required
-                aria-describedby="password1Help"
-                required
-                placeholder="********"
-              />
-              <div id="passwordHelp" class="form-text">
-                La contraseña debe tener entre 8 y 20 caracteres, y que esos
-                caracteres sean letras, números, el símbolo @ o el guión.
-              </div>
-            </div>
-
-            <div class="mb-3">
-              <label for="password1" class="form-label"> Repetir Contraseña</label>
-              <input
-                type="password"
-                class="form-control"
-                id="password1"
-                name="password1"
-                required
-                aria-describedby="password1Help"
-                required
-                placeholder="********"
-              />
-            </div>
-
-            </div>
-
-            <!-- foto usuario -->
-            <div class="col-sm-12 col-md-4 text-center" id="foto" style="margin-top: 190px;">
-              <img src="img/Never Gonna.gif" alt="" style="width: 85%;">
-              <br><br>
-              <div class="mb-3">
-                <input class="form-control" type="file" id="file">
-              </div>
+          <!-- botones -->
+          <br><br>
+          <div class="row" id="botones">
+            <div class="col text-center" style="margin-bottom: 40px;">
+              <button type="submit" class="btn btn-primary">Guardar</button>
+              <button type="reset" class="btn btn-primary">Limpiar</button>
             </div>
           </div>
-
-            <!-- botones -->
-            <br><br>
-            <div class="row" id="botones">
-              <div class="col text-center" style="margin-bottom: 40px;">
-                <button type="submit" class="btn btn-primary">Guardar</button>
-                <button type="reset" class="btn btn-primary">Limpiar</button>
-              </div>
-            </div>
-          </div>
-        </form>
-
-        <!-- Footer -->
-        <div class="container">
-          <footer class="py-3 my-4" style="color: black; font-weight: bold;">
-            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-              <li class="nav-item">
-                <a href="#" class="nav-link px-2 text-muted">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link px-2 text-muted">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link px-2 text-muted">Nosotros</a>
-              </li>
-            </ul>
-            <p class="text-center">© 2023 Panda's PetShop</p>
-          </footer>
         </div>
-
       </div>
+    </form>
+
+    <!-- Footer -->
+    <div 
+      id="footer">
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/script.js"></script>
+      crossorigin="anonymous">
+    </script>
+    <script 
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
+      crossorigin="anonymous">
+    </script>
+    <script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+      integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA=="
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer">
+    </script>
+    <script 
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script 
+      src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js">
+    </script>
+    <script 
+      src="js/script.js">
+    </script>
   </body>
 </html>

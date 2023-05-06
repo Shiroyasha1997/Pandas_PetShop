@@ -14,146 +14,120 @@
   </head>
   <body style="background-image: url(img/Background.jpg); background-position: center; background-size: cover;">
 
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg" style="background-image: url(img/Pink.gif); background-position: center;">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index usuario.html"><img src="img/Panda's PetShop.png" style="width: 80px;"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index usuario.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="nosotros usuario.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="mis datos.html">Mis Datos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="mis compras.html">Mis Compras Anteriores</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Cerrar Sesion</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="carrito.html"><img src="img/Carrito Black.png" style="width: 30px;"></a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
-              <button class="btn-outline-success" type="submit">Buscar</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-
-      <!-- titulo -->
-      <div class="text-center">
-        <h1 style="margin-top: 20px; font-weight: 1000;">Estado del Pedido</h1>
-      </div>
-      <br>
-
-      <!-- Estado del pedido -->
-      <div class="row">
-        <div style="display: flex; margin: auto; margin-bottom: 40px; justify-content: center;">
-          <div style="width: 80px; height: 80px; border-radius: 50px; background-color: pink; border: 2px solid black;">
-            <p style="text-align: center; margin-top: 80px;">Vendido:</p>
-            <p style="text-align: center; margin-top: -20px;">02/04/2023</p>
-          </div>
-          <div style="width: 80px; height: 80px; border-radius: 50px; background-color: pink; margin: 0 100px; border: 2px solid black;">
-            <p style="text-align: center; margin-top: 80px;">Despachado:</p>
-            <p style="text-align: center; margin-top: -20px;">03/04/2023</p>
-          </div>
-          <div class="spinner-grow" role="status" style="width: 80px; height: 80px; border-radius: 50px; background-color: gray; border: 2px solid black;">
-            <p style="text-align: center; margin-top: 80px;">Entregado:</p>
-            <p style="text-align: center; margin-top: -20px;">Pendiente</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- titulo -->
-      <div class="text-center">
-        <h1 style="margin-top: 20px; font-weight: 1000;">Detalle de Boleta</h1>
-      </div>
-      <br>
-
-      <!-- Boleta 1 -->
-      <div class="table-responsive">
-        <table class="table table-bordered" style="background-color: rgb(184, 184, 184); border: 2px solid black; width: 90%; margin: auto; margin-top: 20px;">
-          <thead class="table-dark">
-            <tr>
-              <th scope="col" style="font-weight: 1000; font-size: 20px;">Categoria</th>
-              <th scope="col" style="font-weight: 1000; font-size: 20px;">Producto</th>
-              <th scope="col" style="font-weight: 1000; font-size: 20px;">Precio</th>
-              <th scope="col" style="font-weight: 1000; font-size: 20px;">Descuento Subscriptor</th>
-              <th scope="col" style="font-weight: 1000; font-size: 20px;">Descuento Oferta</th>
-              <th scope="col" style="font-weight: 1000; font-size: 20px;">Descuento Total</th>
-              <th scope="col" style="font-weight: 1000; font-size: 20px;">Descuentos</th>
-              <th scope="col" style="font-weight: 1000; font-size: 20px;">Precio a Pagar</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style="color: black; font-size: 25px;">Gatos</td>
-              <td><img src="img/Taste of the Wild.jpg" style="width: 150px;"></td>
-              <td style="color: black; font-size: 25px;">$16.490</td>
-              <td style="color: black; font-size: 25px;">5%</td>
-              <td style="color: black; font-size: 25px;">0%</td>
-              <td style="color: black; font-size: 25px;">5%</td>
-              <td style="color: black; font-size: 25px;">$825</td>
-              <td style="color: black; font-size: 25px;">$15.665</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- Boleta 2 -->
-      <div class="table-responsive">
-        <table class="table table-bordered" style="background-color: rgb(184, 184, 184); border: 2px solid black; width: 50%; margin: auto; margin-top: 20px;">
-          <thead class="table-dark">
-            <tr>
-              <th style="font-weight: 1000; font-size: 20px;">Precio sin IVA</th>
-              <th style="font-weight: 1000; font-size: 20px;">Valor del IVA (19%)</th>
-              <th style="font-weight: 1000; font-size: 20px;">Total a pagar</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style="color: black; font-size: 25px;">$12.689</td>
-              <td style="color: black; font-size: 25px;">$2.976</td>
-              <td style="color: black; font-size: 25px;">$15.665</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- Footer -->
-      <div class="container">
-        <footer class="py-3 my-4" style="color: black; font-weight: bold;">
-          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-muted">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-muted">Productos</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-muted">Nosotros</a>
-            </li>
-          </ul>
-          <p class="text-center">© 2023 Panda's PetShop</p>
-        </footer>
-      </div>
-
+    <!-- Navbar -->
+    <div 
+      id="menu-superior">
     </div>
+
+    <!-- titulo -->
+    <div class="text-center">
+      <h1 style="margin-top: 10px; font-weight: 1000;">Estado del Pedido</h1>
+    </div>
+    <br>
+
+    <!-- Estado del pedido -->
+    <div class="row">
+      <div style="display: flex; margin: auto; margin-bottom: 40px; justify-content: center;">
+        <div style="width: 80px; height: 80px; border-radius: 50px; background-color: pink; border: 2px solid black;">
+          <p style="text-align: center; margin-top: 80px;">Vendido:</p>
+          <p style="text-align: center; margin-top: -20px;">02/04/2023</p>
+        </div>
+        <div style="width: 80px; height: 80px; border-radius: 50px; background-color: pink; margin: 0 100px; border: 2px solid black;">
+          <p style="text-align: center; margin-top: 80px;">Despachado:</p>
+          <p style="text-align: center; margin-top: -20px;">03/04/2023</p>
+        </div>
+        <div class="spinner-grow" role="status" style="width: 80px; height: 80px; border-radius: 50px; background-color: gray; border: 2px solid black;">
+          <p style="text-align: center; margin-top: 80px;">Entregado:</p>
+          <p style="text-align: center; margin-top: -20px;">Pendiente</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- titulo -->
+    <div class="text-center">
+      <h1 style="margin-top: 10px; font-weight: 1000;">Detalle de Boleta</h1>
+    </div>
+    <br>
+
+    <!-- Boleta 1 -->
+    <div class="table-responsive">
+      <table class="table table-bordered" style="background-color: rgb(184, 184, 184); border: 2px solid black; width: 90%; margin: auto; margin-top: 20px;">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col" style="font-weight: 1000; font-size: 20px;">Categoria</th>
+            <th scope="col" style="font-weight: 1000; font-size: 20px;">Producto</th>
+            <th scope="col" style="font-weight: 1000; font-size: 20px;">Precio</th>
+            <th scope="col" style="font-weight: 1000; font-size: 20px;">Descuento Subscriptor</th>
+            <th scope="col" style="font-weight: 1000; font-size: 20px;">Descuento Oferta</th>
+            <th scope="col" style="font-weight: 1000; font-size: 20px;">Descuento Total</th>
+            <th scope="col" style="font-weight: 1000; font-size: 20px;">Descuentos</th>
+            <th scope="col" style="font-weight: 1000; font-size: 20px;">Precio a Pagar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="color: black; font-size: 25px;">Gatos</td>
+            <td style="color: black; font-size: 25px;">Taste of the Wild Canyon River</td>
+            <td style="color: black; font-size: 25px;">$16.490</td>
+            <td style="color: black; font-size: 25px;">5%</td>
+            <td style="color: black; font-size: 25px;">0%</td>
+            <td style="color: black; font-size: 25px;">5%</td>
+            <td style="color: black; font-size: 25px;">$825</td>
+            <td style="color: black; font-size: 25px;">$15.665</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Boleta 2 -->
+    <div class="table-responsive">
+      <table class="table table-bordered" style="background-color: rgb(184, 184, 184); border: 2px solid black; width: 50%; margin: auto; margin-top: 20px;">
+        <thead class="table-dark">
+          <tr>
+            <th style="font-weight: 1000; font-size: 20px;">Precio sin IVA</th>
+            <th style="font-weight: 1000; font-size: 20px;">Valor del IVA (19%)</th>
+            <th style="font-weight: 1000; font-size: 20px;">Total a pagar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="color: black; font-size: 25px;">$12.689</td>
+            <td style="color: black; font-size: 25px;">$2.976</td>
+            <td style="color: black; font-size: 25px;">$15.665</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Footer -->
+    <div 
+      id="footer">
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/script.js"></script>
+      crossorigin="anonymous">
+    </script>
+    <script 
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
+      crossorigin="anonymous">
+    </script>
+    <script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+      integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA=="
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer">
+    </script>
+    <script 
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script 
+      src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js">
+    </script>
+    <script 
+      src="js/script.js">
+    </script>
   </body>
 </html>

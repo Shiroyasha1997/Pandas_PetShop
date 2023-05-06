@@ -14,111 +14,94 @@
   </head>
   <body style="background-image: url(img/Background.jpg); background-position: center; background-size: cover;">
 
-      <!-- cabecera -->
-      <nav class="navbar navbar-expand-lg" style="background-image: url(img/Pink.gif); background-position: center;">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="img/Panda's PetShop.png" style="width: 80px;"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="registro.html">Registrarme</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="ingresar.html">Iniciar sesión</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
-              <button class="btn-outline-success" type="submit">Buscar</button>
-            </form>
+    <!-- Navbar -->
+    <div 
+      id="menu-superior">
+    </div>
+
+    <!-- Login -->
+    <form class="mb-5">
+      <div class="container-fluid" style="font-weight: bold;">
+        <!-- todos los datos del cliente -->
+        <div class="row justify-content-center">
+          <!-- datos del cliente -->
+          <div class="col-sm-12 col-md-4" id="datos">
+          <br><br>
+          <h1 class="font-weight-bold mb-4">Inicia Sesion</h1>
+
+          <div class="mb-4">
+            <label for="email" class="form-label">Email</label>
+            <input 
+              required 
+              placeholder="Ingresa tu email" 
+              type="email" 
+              class="form-control" 
+              id="email" 
+              aria-describedby="email"/>
           </div>
-        </div>
-      </nav>
 
-      <!-- Login -->
-      <form class="mb-5">
-        <div class="container-fluid">
-          <!-- todos los datos del cliente -->
-          <div class="row justify-content-center">
-            <!-- datos del cliente -->
-            <div class="col-sm-12 col-md-4" id="datos">
-            <br><br>
-            <h1 class="font-weight-bold mb-4">Inicia Sesion</h1>
+          <div class="mb-4">
+            <label for="password" class="form-label">Contraseña</label>
+            <input
+              required
+              placeholder="Ingresa tu contraseña"
+              type="password" 
+              class="form-control" 
+              id="password"/>
+            <a href="" id="emailHelp" class="form-text text-muted text-decoration-none">¿Has olvidado tu contraseña?</a>
+          </div>
 
-            <div class="mb-4">
-              <label for="email" class="form-label">Email</label>
-              <input 
-                required 
-                placeholder="Ingresa tu email" 
-                type="email" 
-                class="form-control" 
-                id="email" 
-                aria-describedby="email"/>
-            </div>
+          <!-- Seleccionar modo cliente o administrador -->
+          <a href="#" style="text-decoration: underline;">Modo Administrador <br /></a>
+          <a href="#" style="text-decoration: underline;">Modo Cliente</a>
 
-            <div class="mb-4">
-              <label for="password" class="form-label">Contraseña</label>
-              <input
-                required
-                placeholder="Ingresa tu contraseña"
-                type="password" 
-                class="form-control" 
-                id="password"/>
-              <a href="" id="emailHelp" class="form-text text-muted text-decoration-none">¿Has olvidado tu contraseña?</a>
-            </div>
-
-            <!-- Seleccionar modo cliente o administrador -->
-            <a href="index administrador.html" style="text-decoration: underline;">Modo Administrador <br /></a>
-            <a href="index usuario.html" style="text-decoration: underline;">Modo Cliente</a>
-
-            <!-- botones -->
-            <br><br>
-            <div class="row" id="botones">
-              <div class="col text-center" style="margin-top: 10px; margin-bottom: 10px;">
-                <button type="submit" class="btn btn-primary"><a href="#" style="text-decoration: none; color: white;">Iniciar Sesion</a></button>
-              </div>
-            </div>
-
-            <div class="text-center px-lg-5 pt-lg-3 pb-lg-4 p-4 mt-auto w-100">
-                <p class="d-inline-block mb-0">¿Todavia no tienes una cuenta?</p> <a href="registro.html" 
-                class="text-blue font-weight-bold text-decoration-none">Crea una ahora</a>
+          <!-- botones -->
+          <br><br>
+          <div class="row" id="botones">
+            <div class="col text-center" style="margin-top: 10px; margin-bottom: 10px;">
+              <button id="btnInciarSesion" type="submit" class="btn btn-primary btn-lg">
+                Iniciar Sesion
+              </button>
             </div>
           </div>
-        </form>
 
-        <!-- Footer -->
-        <div class="container">
-          <footer class="py-3 my-4" style="color: black; font-weight: bold;">
-            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-              <li class="nav-item">
-                <a href="#" class="nav-link px-2 text-muted">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link px-2 text-muted">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link px-2 text-muted">Nosotros</a>
-              </li>
-            </ul>
-            <p class="text-center">© 2023 Panda's PetShop</p>
-          </footer>
+          <div class="text-center px-lg-5 pt-lg-3 pb-lg-4 p-4 mt-auto w-100">
+              <p class="d-inline-block mb-0">¿Todavia no tienes una cuenta?</p> <a href="registro.html" 
+              class="text-blue font-weight-bold text-decoration-none">Crea una ahora</a>
+          </div>
         </div>
-
       </div>
+    </form>
+
+    <!-- Footer -->
+    <div 
+      id="footer">
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/script.js"></script>
+      crossorigin="anonymous">
+    </script>
+    <script 
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
+      crossorigin="anonymous">
+    </script>
+    <script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+      integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA=="
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer">
+    </script>
+    <script 
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script 
+      src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js">
+    </script>
+    <script 
+      src="js/script.js">
+    </script>
   </body>
 </html>
