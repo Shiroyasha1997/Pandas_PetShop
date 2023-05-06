@@ -14,6 +14,7 @@
   </head>
   <body style="background-image: url(img/Background.jpg); background-position: center; background-size: cover;">
 
+<<<<<<< HEAD
     <!-- Navbar -->
     <div 
       id="menu-superior">
@@ -167,5 +168,157 @@
     <script 
       src="js/script.js">
     </script>
+=======
+      <!-- Navbar -->
+      <div 
+        id="menu-superior">
+      </div>
+
+      <!-- formulario de cliente -->
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <!-- Inicio form -->
+            <h1 class="font-weight-bold mb-4">Registrarse</h1>
+            <form method="POST" id="formulario1" action="recibir_datos">
+
+              <div class="form-group">
+                <br>
+                <label for="rut">RUT</label>
+                <input
+                  type="text"
+                  id="rut"
+                  name="rut"
+                  class="form-control"
+                  placeholder="Ej 12345678-5"
+                  value=""
+                />
+              </div>
+
+              <div class="form-group">
+                <br>
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Ingrese su email aquí"
+                  value=""
+                />
+              </div>
+
+              <div class="form-group">
+                <br>
+                <label for="direccion">Direccion</label>
+                <textarea
+                  type="direccion"
+                  id="direccion"
+                  name="direccion"
+                  class="form-control"
+                  placeholder="Ingrese su direccion"
+                  value=""
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <br>
+                <label for="password">Contraseña</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  class="form-control"
+                  placeholder="Ingresar contraseña del al menos 5 caracteres"
+                  value=""
+                />
+              </div>
+
+              <div class="form-group">
+                <br>
+                <label for="password2">Repetir Contraseña</label>
+                <input
+                  type="password"
+                  id="password2"
+                  name="password2"
+                  class="form-control"
+                  placeholder="Repetir contraseña digitada anteriormente"
+                  value=""
+                />
+              </div>
+
+              <div class="mb-3 form-check">
+                <br>
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Con suscripción</label
+                >
+                <div id="rutHelp" class="form-text">
+                  Deseo suscribirme con un aporte de $3.000 mensuales y obtener un 5% de descuento en mis compras.
+                </div>
+              </div>
+
+              <!-- foto usuario -->
+              <div class="col-sm-12 col-md-4 text-center" id="foto">
+                <img src="img/Never Gonna.gif" alt="" style="width: 85%;">
+                <br><br>
+                <div class="mb-3">
+                  <input class="form-control" type="file" id="file">
+                </div>
+              </div>
+
+              <br>
+              <button id="id_btnEnviar" type="submit" class="btn btn-primary">
+                Enviar
+              </button>
+              <button id="id_btnEnviar" type="reset" class="btn btn-primary">
+                Limpiar
+              </button>
+
+              <div class="text-center px-lg-5 pt-lg-3 pb-lg-4 p-4 mt-auto w-100">
+                <p class="d-inline-block mb-0">¿Ya tienes una cuenta?</p> <a href="ingresar.html" 
+                class="text-blue font-weight-bold text-decoration-none">Ingresa aqui</a>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div 
+        id="footer">
+      </div>
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous">
+      </script>
+      <script 
+        src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
+        crossorigin="anonymous">
+      </script>
+      <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+        integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA=="
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer">
+      </script>
+      <script 
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+      </script>
+      <script 
+        src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js">
+      </script>
+      <script 
+        src="js/script.js">
+      </script>
+>>>>>>> c795772bfc85ecbca666798757b0feabf38793fc
   </body>
 </html>
