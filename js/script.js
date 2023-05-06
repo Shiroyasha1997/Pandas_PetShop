@@ -87,13 +87,10 @@ $(document).ready(function () {
 
   $("#formulario1").validate({
     rules: {
-<<<<<<< HEAD
       ID: {
         required: true,
         ID: true,
       },
-=======
->>>>>>> c795772bfc85ecbca666798757b0feabf38793fc
       rut: {
         required: true,
         rutChileno: true,
@@ -116,13 +113,10 @@ $(document).ready(function () {
       },
     }, // --> Fin de reglas
     messages: {
-<<<<<<< HEAD
       ID: {
         required: "El ID es un campo obligatorio",
         ID: "El formato del ID no es válido",
       },
-=======
->>>>>>> c795772bfc85ecbca666798757b0feabf38793fc
       rut: {
         required: "El rut es un campo obligatorio",
         rutChileno: "El formato del rut no es válido",
