@@ -12,62 +12,70 @@
       crossorigin="anonymous"
     />
   </head>
-  <body style="background-image: url(img/Background.jpg); background-position: center; background-size: cover;">
+  <body style="height: 100vh; margin: 0; padding: 0; background-image: url(img/Background.jpg); background-position: center; background-size: cover;">
 
     <!-- Navbar -->
     <div 
       id="menu-superior">
     </div>
 
+    <!-- titulo -->
+    <div class="text-center">
+      <h1 style="margin-top: 20px; font-weight: 1000;">Iniciar Sesion</h1>
+    </div>
+    <br>
+
     <!-- Login -->
-    <form class="mb-5">
+    <form id="login-form" class="row g-0 needs-validation">
       <div class="container-fluid" style="font-weight: bold;">
-        <!-- todos los datos del cliente -->
         <div class="row justify-content-center">
-          <!-- datos del cliente -->
-          <div class="col-sm-12 col-md-4" id="datos">
-          <br><br>
-          <h1 class="font-weight-bold mb-4">Inicia Sesion</h1>
+          <div class="col-sm-12 col-md-4">
 
-          <div class="mb-4">
-            <label for="email" class="form-label">Email</label>
-            <input 
-              required 
-              placeholder="Ingresa tu email" 
-              type="email" 
-              class="form-control" 
-              id="email" 
-              aria-describedby="email"/>
-          </div>
-
-          <div class="mb-4">
-            <label for="password" class="form-label">Contraseña</label>
-            <input
-              required
-              placeholder="Ingresa tu contraseña"
-              type="password" 
-              class="form-control" 
-              id="password"/>
-            <a href="" id="emailHelp" class="form-text text-muted text-decoration-none">¿Has olvidado tu contraseña?</a>
-          </div>
-
-          <!-- Seleccionar modo cliente o administrador -->
-          <a href="#" style="text-decoration: underline;">Modo Administrador <br /></a>
-          <a href="#" style="text-decoration: underline;">Modo Cliente</a>
-
-          <!-- botones -->
-          <br><br>
-          <div class="row" id="botones">
-            <div class="col text-center" style="margin-top: 10px; margin-bottom: 10px;">
-              <button id="btnInciarSesion" type="submit" class="btn btn-primary btn-lg">
-                Iniciar Sesion
-              </button>
+            <div class="form-group">
+              <br>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                placeholder="Ingrese su email aquí"
+                value=""
+              />
             </div>
-          </div>
 
-          <div class="text-center px-lg-5 pt-lg-3 pb-lg-4 p-4 mt-auto w-100">
+            <div class="form-group">
+              <br>
+              <label for="password">Contraseña</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                class="form-control"
+                placeholder="Ingresar contraseña"
+                value=""
+              />
+              <a href="" id="emailHelp" class="form-text text-muted text-decoration-none">¿Has olvidado tu contraseña?</a>
+            </div>
+
+            <!-- Seleccionar modo cliente o administrador -->
+            <a href="#" style="text-decoration: underline;">Modo Administrador <br /></a>
+            <a href="#" style="text-decoration: underline;">Modo Cliente</a>
+
+            <!-- botones -->
+            <br><br>
+            <div class="row" id="botones">
+              <div class="col text-center" style="margin-top: 10px; margin-bottom: 10px;">
+                <button id="btnInciarSesion" type="submit" class="btn btn-primary btn-lg">
+                  Iniciar Sesion
+                </button>
+              </div>
+            </div>
+
+            <div class="text-center px-lg-5 pt-lg-3 pb-lg-4 p-4 mt-auto w-100">
               <p class="d-inline-block mb-0">¿Todavia no tienes una cuenta?</p> <a href="registro.html" 
               class="text-blue font-weight-bold text-decoration-none">Crea una ahora</a>
+            </div>
           </div>
         </div>
       </div>

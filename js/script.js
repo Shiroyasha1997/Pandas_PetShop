@@ -33,6 +33,109 @@ $(document).ready(function () {
   xhttp.send();
 });
 
+//MANTENEDOR DE PRODUCTOS//
+$(document).ready(function() {
+  // Detectar el evento submit del formulario
+  $("#prod-form").submit(function(event) {
+    // Validar el campo ID
+    if ($("#ID").val() === "") {
+      $("#ID").addClass("is-invalid");
+      event.preventDefault();
+    } else {
+      $("#ID").removeClass("is-invalid");
+    }
+
+    // Validar el campo Nombre
+    if ($("#Nombre").val() === "") {
+      $("#Nombre").addClass("is-invalid");
+      event.preventDefault();
+    } else {
+      $("#Nombre").removeClass("is-invalid");
+    }
+
+    // Validar el campo Descripción
+    if ($("#Descripcion").val() === "") {
+      $("#Descripcion").addClass("is-invalid");
+      event.preventDefault();
+    } else {
+      $("#Descripcion").removeClass("is-invalid");
+    }
+
+    // Validar el campo Precio
+    if ($("#Precio").val() === "") {
+      $("#Precio").addClass("is-invalid");
+      event.preventDefault();
+    } else {
+      $("#Precio").removeClass("is-invalid");
+    }
+
+    // Validar el campo Descuento Suscriptor
+    if ($("#Descuento Suscriptor").val() === "") {
+      $("#Descuento Suscriptor").addClass("is-invalid");
+      event.preventDefault();
+    } else {
+      $("#Descuento Suscriptor").removeClass("is-invalid");
+    }
+
+    // Validar el campo Descuento Oferta
+    if ($("#Descuento Oferta").val() === "") {
+      $("#Descuento Oferta").addClass("is-invalid");
+      event.preventDefault();
+    } else {
+      $("#Descuento Oferta").removeClass("is-invalid");
+    }
+  });
+});
+
+//LOGIN//
+$(document).ready(function() {
+  $('#login-form').submit(function(event) {
+
+    // Evita el envío del formulario
+    event.preventDefault();
+
+    // Obtener los valores de los campos de entrada
+    var email = $('#email').val().trim();
+    var password = $('#password').val().trim();
+
+    // Validar los campos de entrada
+    if (email.length == 0 || password.length == 0) {
+      alert('Por favor, complete todos los campos');
+      return;
+    }
+
+    // Validar el formato del correo electrónico
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert('Por favor, introduzca una dirección de correo electrónico válida');
+      return;
+    }
+
+    // Validar la longitud de la contraseña
+    if (password.length < 6) {
+      alert('La contraseña debe tener al menos 6 caracteres');
+      return;
+    }
+
+    // Deshabilitar el botón de inicio de sesión para evitar envíos duplicados
+    $('#btnInciarSesion').prop('disabled', true);
+
+    // Enviar formulario si los campos son válidos
+    $(this).unbind('submit').submit();
+
+    // Redirigir a la página de inicio de sesión si los campos son válidos
+    window.location.href = "index.html";
+
+  });
+
+  // Resaltar el campo de entrada actual al hacer clic en él
+  $('input').focus(function() {
+    $(this).addClass('border-primary');
+  }).blur(function() {
+    $(this).removeClass('border-primary');
+  });
+});
+
 //FOOTER//
 $(document).ready(function () {
   var xhttp = new XMLHttpRequest();
@@ -45,7 +148,30 @@ $(document).ready(function () {
   xhttp.send();
 });
 
-//VALIDACION//
+//BODEGA//
+$(document).ready(function() {
+  // Agregar evento de submit al formulario
+  $('#bodega-form').submit(function(event) {
+    // Detener el envío del formulario para poder realizar la validación
+    event.preventDefault();
+    
+    // Obtener los valores de los campos del formulario
+    var categoria = $('#Categoria').val();
+    var producto = $('#Producto').val();
+    var cantidad = $('#Cantidad').val();
+
+    // Validar que la cantidad sea mayor que cero
+    if (cantidad <= 0) {
+      alert('La cantidad debe ser mayor que cero');
+      return;
+    }
+
+    // Si todo está bien, enviar el formulario
+    this.submit();
+  });
+});
+
+//VALIDACION DE REGISTRO//
 $(document).ready(function () {
   // Agregar método de validación para RUT chileno
   $.validator.addMethod(
@@ -85,7 +211,7 @@ $(document).ready(function () {
     "Por favor ingrese un RUT válido."
   );
 
-  $("#formulario1").validate({
+  $("#register-form").validate({
     rules: {
       ID: {
         required: true,

@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body style="background-image: url(img/Background.jpg); background-position: center; background-size: auto;">
+  <body style="height: 100vh; margin: 0; padding: 0; background-image: url(img/Background.jpg); background-position: center; background-size: cover;">
 
     <!-- Navbar -->
     <div 
@@ -26,11 +26,10 @@
     <br>
 
     <!-- formulario de cliente -->
-    <div class="container-fluid" style="font-weight: bold;">
-      <div class="row justify-content-center">
-        <div class="col-sm-12 col-md-4">
-          <!-- Inicio form -->
-          <form method="POST" id="formulario1" action="recibir_datos">
+    <form id="register-form" class="row g-0 needs-validation">
+      <div class="container-fluid" style="font-weight: bold;">
+        <div class="row justify-content-center">
+          <div class="col-sm-12 col-md-4">
 
             <div class="form-group">
               <br>
@@ -148,14 +147,14 @@
             <div class="row" id="botones">
               <div class="col text-center" style="margin: 40px;">
                 <button type="submit" class="btn btn-primary btn-lg">Guardar</button>
-                <button type="reset" class="btn btn-primary btn-lg">Nuevo</button>
+                <button type="button" class="btn btn-primary btn-lg">Nuevo</button>
                 <button type="reset" class="btn btn-primary btn-lg">Eliminar</button>
               </div>
             </div>
-          </form>
+          </div>
         </div>
       </div>
-    </div>
+    </form>
 
     <!-- Tabla Usuario -->
     <div class="table-responsive">

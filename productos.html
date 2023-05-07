@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body style="background-image: url(img/Background.jpg); background-position: center; background-size: cover;">
+  <body style="height: 100vh; margin: 0; padding: 0; background-image: url(img/Background.jpg); background-position: center; background-size: cover;">
 
     <!-- Navbar -->
     <div 
@@ -26,10 +26,10 @@
     <br>
 
     <!-- formulario de producto -->
-    <form class="row g-0 needs-validation" novalidate>
+    <form id="prod-form" class="row g-0 needs-validation">
       <div class="container-fluid" style="font-weight: bold;">
-        <div class="row justify-content-center" style="margin: 40px;">
-          <div class="col-sm-12 col-md-4" id="datos">
+        <div class="row justify-content-center">
+          <div class="col-sm-12 col-md-4">
 
             <div class="mb-3">
               <label for="ID" class="form-label">ID</label>
@@ -103,7 +103,7 @@
             </div>
 
             <!-- foto producto -->
-            <div class="col-sm-12 col-md-4 text-center" id="foto" style="margin-top: 53px;">
+            <div class="col-sm-12 col-md-4 text-center" id="foto" style="margin-top: 18px;">
               <img src="img/Taste of the Wild.jpg" alt="" style="width: 85%;">
               <br><br>
               <div class="mb-3">

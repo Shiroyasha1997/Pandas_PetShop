@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body style="background-image: url(img/Background.jpg); background-position: center; background-size: cover;">
+  <body style="height: 100vh; margin: 0; padding: 0; background-image: url(img/Background.jpg); background-position: center; background-size: cover;">
 
     <!-- Navbar -->
     <div 
@@ -26,79 +26,48 @@
     <br>
 
     <!-- formulario de bodega -->
-    <form class="row g-0 needs-validation" novalidate>
+    <form id="bodega-form" class="row g-0 needs-validation">
       <div class="container-fluid" style="font-weight: bold;">
-        <div class="row justify-content-center" style="margin: 40px;">
-          <div class="col-sm-12 col-md-4" id="datos">
+        <div class="row justify-content-center">
+          <div class="col-sm-12 col-md-4">
 
             <div class="mb-3">
               <label for="Categoria" class="form-label">Categoria</label>
-                <select class="form-select" name="Categoria" style="width: 50%; height: 40px; font-weight: bold;">
-                  <option selected>Gato</option>
-                  <option>Perro</option>
-                  <option>Otros</option>
-                </select>
+              <select class="form-select" name="Categoria" id="Categoria" style="width: 50%; height: 40px; font-weight: bold;">
+                <option selected>Gato</option>
+                <option>Perro</option>
+                <option>Otros</option>
+              </select>
             </div>
-
+    
             <div class="mb-3">
               <label for="Producto" class="form-label">Producto</label>
-                <select class="form-select" name="Producto" style="width: 50%; height: 40px; font-weight: bold;">
-                  <option selected>Taste of The Wild</option>
-                  <option>Fit Formula</option>
-                  <option>Raza</option>
-                </select>
+              <select class="form-select" name="Producto" id="Producto" style="width: 50%; height: 40px; font-weight: bold;">
+                <option selected>Taste of The Wild</option>
+                <option>Fit Formula</option>
+                <option>Raza</option>
+              </select>
             </div>
-
+    
             <div class="mb-3">
               <label for="Cantidad" class="form-label">Cantidad</label>
-              <input required placeholder="" 
-                  type="number" class="form-control" 
-                  id="Cantidad" aria-describedby="Cantidad">
+              <input required type="number" class="form-control" id="Cantidad" name="Cantidad" aria-describedby="Cantidad">
               <div class="invalid-feedback">
                 El campo es obligatorio
               </div>
             </div>
-
-<<<<<<< HEAD
-            </div>
-=======
-              <div class="mb-3">
-                <label for="Producto" class="form-label">Producto</label>
-                  <select class="form-select" name="Producto" style="width: 50%; height: 40px; font-weight: bold;">
-                    <option selected>Taste of The Wild</option>
-                    <option>Fit Formula</option>
-                    <option>Raza</option>
-                  </select>
-              </div>
->>>>>>> c795772bfc85ecbca666798757b0feabf38793fc
-
-            <!-- foto producto -->
-            <div class="col-sm-12 col-md-4 text-center" id="foto">
-              <img src="img/Taste of the Wild.jpg" alt="" style="width: 40%; margin: auto;">
-            </div>
-
-<<<<<<< HEAD
-            <!-- botones -->
-            <div class="row" id="botones">
-              <div class="col text-center" style="margin: 40px;">
-                <button type="submit" class="btn btn-primary">Nuevo</button>
-                <button type="submit" class="btn btn-primary">Agregar</button>
-=======
-              </div>
-
-              <!-- foto producto -->
-              <div class="col-sm-12 col-md-4 text-center" id="foto">
-                <img src="img/Taste of the Wild.jpg" alt="" style="width: 40%; margin: auto;">
-              </div>
-
-              <!-- botones -->
-              <div class="row" id="botones">
-                <div class="col text-center" style="margin: 40px;">
-                  <button type="submit" class="btn btn-primary">Nuevo</button>
-                  <button type="submit" class="btn btn-primary">Agregar</button>
-                </div>
->>>>>>> c795772bfc85ecbca666798757b0feabf38793fc
-              </div>
+          </div>
+    
+          <!-- foto producto -->
+          <div class="col-sm-12 col-md-4 text-center" id="foto">
+            <img src="img/Taste of the Wild.jpg" alt="" style="width: 40%; margin: auto;">
+          </div>
+    
+          <!-- botones -->
+          <div class="row" id="botones">
+            <div class="col text-center" style="margin: 40px;">
+              <button type="reset" class="btn btn-primary">Nuevo</button>
+              <button type="submit" class="btn btn-primary">Agregar</button>
             </div>
           </div>
         </div>
@@ -124,9 +93,7 @@
             <td style="color: black; font-size: 25px;">Saco de alimento Taste of the Wild Cat</td>
             <td style="color: black; font-size: 25px;">Vendido</td>
             <td style="color: black; font-size: 25px;">
-              <button class="btn-outline-success" type="submit">
-              Eliminar
-              </button>
+              <button class="btn btn-primary" type="submit">Eliminar</button>
             </td>
           </tr>
         </tbody>
