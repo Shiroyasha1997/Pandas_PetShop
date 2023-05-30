@@ -12,27 +12,27 @@
       crossorigin="anonymous"
     />
   </head>
-  <body style="height: 100vh; margin: 0; padding: 0; background-image: url(img/Background.jpg); background-position: center; background-size: cover;">
+  <body style="margin: 0; padding: 0; background-image: url(img/Background.jpg); background-position: center; background-size: cover;">
 
     <!-- Navbar -->
     <div 
       id="menu-superior">
     </div>
 
-    <!-- titulo -->
+    <!-- Titulo -->
     <div class="text-center">
       <h1 style="margin-top: 20px; font-weight: 1000;">Mantenedor de Bodega</h1>
     </div>
     <br>
 
-    <!-- formulario de bodega -->
+    <!-- Formulario de Bodega -->
     <form id="bodega-form" class="row g-0 needs-validation">
       <div class="container-fluid" style="font-weight: bold;">
         <div class="row justify-content-center">
           <div class="col-sm-12 col-md-4">
 
             <div class="mb-3">
-              <label for="Categoria" class="form-label">Categoria</label>
+              <label for="Categoria" class="form-label">Categoría</label>
               <select class="form-select" name="Categoria" id="Categoria" style="width: 50%; height: 40px; font-weight: bold;">
                 <option selected>Gato</option>
                 <option>Perro</option>
@@ -48,26 +48,31 @@
                 <option>Raza</option>
               </select>
             </div>
-    
-            <div class="mb-3">
-              <label for="Cantidad" class="form-label">Cantidad</label>
-              <input required type="number" class="form-control" id="Cantidad" name="Cantidad" aria-describedby="Cantidad">
-              <div class="invalid-feedback">
-                El campo es obligatorio
-              </div>
+
+            <div class="form-group">
+              <label for="cantidad">Cantidad</label>
+              <input
+                type="number"
+                id="cantidad"
+                name="cantidad"
+                class="form-control"
+                placeholder="Ingrese la cantidad"
+                value=""
+              />
             </div>
+
           </div>
-    
-          <!-- foto producto -->
+
+          <!-- Foto Producto -->
           <div class="col-sm-12 col-md-4 text-center" id="foto">
             <img src="img/Taste of the Wild.jpg" alt="" style="width: 40%; margin: auto;">
           </div>
-    
-          <!-- botones -->
+
+          <!-- Botones -->
           <div class="row" id="botones">
             <div class="col text-center" style="margin: 40px;">
-              <button type="reset" class="btn btn-primary">Nuevo</button>
-              <button type="submit" class="btn btn-primary">Agregar</button>
+              <button id="id_btnAgregar" type="submit" class="btn btn-primary btn-lg">Agregar</button>
+              <button id="id_btnNuevo" type="reset" class="btn btn-primary btn-lg">Nuevo</button>
             </div>
           </div>
         </div>
@@ -80,7 +85,7 @@
         <thead class="table-dark">
           <tr>
             <th scope="col" style="font-weight: 1000; font-size: 20px;">ID</th>
-            <th scope="col" style="font-weight: 1000; font-size: 20px;">Categoria</th>
+            <th scope="col" style="font-weight: 1000; font-size: 20px;">Categoría</th>
             <th scope="col" style="font-weight: 1000; font-size: 20px;">Nombre</th>
             <th scope="col" style="font-weight: 1000; font-size: 20px;">Estado</th>
             <th scope="col" style="font-weight: 1000; font-size: 20px;">Opciones</th>

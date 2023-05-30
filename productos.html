@@ -12,36 +12,40 @@
       crossorigin="anonymous"
     />
   </head>
-  <body style="height: 100vh; margin: 0; padding: 0; background-image: url(img/Background.jpg); background-position: center; background-size: cover;">
+  <body style="margin: 0; padding: 0; background-image: url(img/Background.jpg); background-position: center; background-size: cover;">
 
     <!-- Navbar -->
     <div 
       id="menu-superior">
     </div>
 
-    <!-- titulo -->
+    <!-- Titulo -->
     <div class="text-center">
       <h1 style="margin-top: 20px; font-weight: 1000;">Mantenedor de Productos</h1>
     </div>
     <br>
 
-    <!-- formulario de producto -->
+    <!-- Formulario de Producto -->
     <form id="prod-form" class="row g-0 needs-validation">
       <div class="container-fluid" style="font-weight: bold;">
         <div class="row justify-content-center">
           <div class="col-sm-12 col-md-4">
 
-            <div class="mb-3">
-              <label for="ID" class="form-label">ID</label>
-              <input required placeholder="Escribe el ID" 
-                  type="text" class="form-control" 
-                  id="ID" aria-describedby="ID">
-              <div class="invalid-feedback">
-                El campo es obligatorio
-              </div>
+            <div class="form-group">
+              <br>
+              <label for="ID">ID</label>
+              <input
+                type="text"
+                id="ID"
+                name="ID"
+                class="form-control"
+                placeholder="Ingrese el ID aqui"
+                value=""
+              />
             </div>
 
             <div class="mb-3">
+              <br>
               <label for="Categoria" class="form-label">Categoria</label>
                 <select class="form-select" name="Categoria" style="width: 50%; height: 40px; font-weight: bold;">
                   <option selected>Gato</option>
@@ -50,75 +54,91 @@
                 </select>
             </div>
 
-            <div class="mb-3">
-              <label for="Nombre" class="form-label">Nombre</label>
-              <input required placeholder="Escribe el Nombre" 
-                  type="text" class="form-control" 
-                  id="Nombre" aria-describedby="Nombre">
-              <div class="invalid-feedback">
-                El campo es obligatorio
-              </div>
+            <div class="form-group">
+              <br>
+              <label for="nombre">Nombre</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                class="form-control"
+                placeholder="Ingrese el nombre del producto"
+                value=""
+              />
             </div>
 
-            <div class="mb-3">
-              <label for="Descripcion" class="form-label">Descripcion</label>
-              <input required placeholder="Escribe la Descripcion" 
-                  type="text" class="form-control" 
-                  id="Descripcion" aria-describedby="Descripcion">
-              <div class="invalid-feedback">
-                El campo es obligatorio
-              </div>
+            <div class="form-group">
+              <br>
+              <label for="descripcion">Descripción</label>
+              <textarea
+                type="text"
+                id="descripcion"
+                name="descripcion"
+                class="form-control"
+                placeholder="Ingrese la descripción del producto"
+                value=""
+              ></textarea>
             </div>
 
-            <div class="mb-3">
-              <label for="Precio" class="form-label">Precio</label>
-              <input required placeholder="Escribe el Precio" 
-                  type="text" class="form-control" 
-                  id="Precio" aria-describedby="Precio">
-              <div class="invalid-feedback">
-                El campo es obligatorio
-              </div>
+            <div class="form-group">
+              <br>
+              <label for="precio">Precio</label>
+              <input
+                type="number"
+                id="precio"
+                name="precio"
+                class="form-control"
+                placeholder="Ingrese el precio del producto"
+                value=""
+              />
             </div>
 
-            <div class="mb-3">
-              <label for="Descuento Suscriptor" class="form-label">Descuento Suscriptor</label>
-              <input required placeholder="Escribe el Precio" 
-                  type="text" class="form-control" 
-                  id="Descuento Suscriptor" aria-describedby="Descuento Suscriptor">
-              <div class="invalid-feedback">
-                El campo es obligatorio
-              </div>
+            <div class="form-group">
+              <br>
+              <label for="descuento_suscriptor">Descuento Suscriptor</label>
+              <input
+                type="number"
+                id="descuento_suscriptor"
+                name="descuento_suscriptor"
+                class="form-control"
+                placeholder="Ingrese el descuento de suscriptor del producto"
+                value=""
+              />
             </div>
 
-            <div class="mb-3">
-              <label for="Descuento Oferta" class="form-label">Descuento Oferta</label>
-              <input required placeholder="Escribe el Precio" 
-                  type="text" class="form-control" 
-                  id="Descuento Oferta" aria-describedby="Descuento Oferta">
-              <div class="invalid-feedback">
-                El campo es obligatorio
-              </div>
+            <div class="form-group">
+              <br>
+              <label for="descuento_oferta">Descuento por Oferta</label>
+              <input
+                type="number"
+                id="descuento_oferta"
+                name="descuento_oferta"
+                class="form-control"
+                placeholder="Ingrese el descuento de oferta del producto"
+                value=""
+              />
             </div>
 
             </div>
 
-            <!-- foto producto -->
-            <div class="col-sm-12 col-md-4 text-center" id="foto" style="margin-top: 18px;">
+            <!-- Foto Producto -->
+            <div class="col-sm-12 col-md-4 text-center" id="foto" style="margin-top: 40px;">
               <img src="img/Taste of the Wild.jpg" alt="" style="width: 85%;">
               <br><br>
               <div class="mb-3">
                 <input class="form-control" type="file" id="file">
               </div>
             </div>
-          </div>
 
-          <!-- botones -->
-          <div class="row" id="botones">
+            <!-- Botones -->
+            <div class="row" id="botones">
               <div class="col text-center" style="margin: 40px;">
-                <button type="submit" class="btn btn-primary">Guardar</button>
-                <button type="reset" class="btn btn-primary">Nuevo</button>
-                <button type="reset" class="btn btn-primary">Eliminar</button>
+                <button id="id_btnGuardar" type="submit" class="btn btn-primary btn-lg">Guardar</button>
+                <button id="id_btnNuevo" type="reset" class="btn btn-primary btn-lg">Nuevo</button>
+                <button id="id_btnEliminar" type="reset" class="btn btn-primary btn-lg">Eliminar</button>
               </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -130,9 +150,9 @@
         <thead class="table-dark">
           <tr>
             <th scope="col" style="font-weight: 1000; font-size: 20px;">ID</th>
-            <th scope="col" style="font-weight: 1000; font-size: 20px;">Categoria</th>
+            <th scope="col" style="font-weight: 1000; font-size: 20px;">Categoría</th>
             <th scope="col" style="font-weight: 1000; font-size: 20px;">Nombre</th>
-            <th scope="col" style="font-weight: 1000; font-size: 20px;">Descripcion</th>
+            <th scope="col" style="font-weight: 1000; font-size: 20px;">Descripción</th>
             <th scope="col" style="font-weight: 1000; font-size: 20px;">Precio</th>
             <th scope="col" style="font-weight: 1000; font-size: 20px;">% Desc. Suscriptor</th>
             <th scope="col" style="font-weight: 1000; font-size: 20px;">% Desc. Oferta</th>

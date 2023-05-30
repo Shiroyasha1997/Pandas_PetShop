@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body style="height: 100vh; margin: 0; padding: 0; background-image: url(img/Background.jpg); background-position: center; background-size: cover;">
+  <body style="margin: 0; padding: 0; background-image: url(img/Background.jpg); background-position: center; background-size: cover;">
 
     <!-- Navbar -->
     <div 
@@ -25,8 +25,8 @@
     </div>
     <br>
 
-    <!-- formulario de cliente -->
-    <form id="register-form" class="row g-0 needs-validation">
+    <!-- Formulario de Cliente -->
+    <form id="user-form" class="row g-0 needs-validation">
       <div class="container-fluid" style="font-weight: bold;">
         <div class="row justify-content-center">
           <div class="col-sm-12 col-md-4">
@@ -40,18 +40,16 @@
                 name="ID"
                 class="form-control"
                 placeholder="Escribe el ID"
+                value=""
               />
-              <div class="invalid-feedback">
-                El campo es obligatorio
-              </div>
             </div>
 
             <div class="mb-3">
               <br>
               <label for="Tipo de Usuario">Tipo de Usuario</label>
               <div class="radio">
-                <label><input style="margin: 10px;" type="radio" name="optradio" checked>Usuario</label>
-                <label><input style="margin: 10px;" type="radio" name="optradio" >Administrador</label>
+                <label><input style="margin: 10px;" type="radio" name="useropt" checked>Usuario</label>
+                <label><input style="margin: 10px;" type="radio" name="useropt" >Administrador</label>
               </div>
             </div>
 
@@ -64,6 +62,32 @@
                 name="rut"
                 class="form-control"
                 placeholder="Ej 12345678-5"
+                value=""
+              />
+            </div>
+
+            <div class="form-group">
+              <br>
+              <label for="nombre">Nombre</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                class="form-control"
+                placeholder="Ingrese su nombre"
+                value=""
+              />
+            </div>
+
+            <div class="form-group">
+              <br>
+              <label for="apellido">Apellido</label>
+              <input
+                type="text"
+                id="apellido"
+                name="apellido"
+                class="form-control"
+                placeholder="Ingrese su apellido"
                 value=""
               />
             </div>
@@ -83,9 +107,9 @@
 
             <div class="form-group">
               <br>
-              <label for="direccion">Direccion</label>
+              <label for="direccion">Dirección</label>
               <textarea
-                type="direccion"
+                type="text"
                 id="direccion"
                 name="direccion"
                 class="form-control"
@@ -125,12 +149,12 @@
               <input
                 type="checkbox"
                 class="form-check-input"
-                id="exampleCheck1"
+                id="subscribe-check"
               />
-              <label class="form-check-label" for="exampleCheck1"
+              <label class="form-check-label" for="subscribe-check"
                 >Con suscripción</label
               >
-              <div id="rutHelp" class="form-text">
+              <div id="suscripcion" class="form-text">
                 Deseo suscribirme con un aporte de $3.000 mensuales y obtener un 5% de descuento en mis compras.
               </div>
             </div>
@@ -144,13 +168,20 @@
               </div>
             </div>
 
+            <!-- botones -->
             <div class="row" id="botones">
               <div class="col text-center" style="margin: 40px;">
-                <button type="submit" class="btn btn-primary btn-lg">Guardar</button>
-                <button type="button" class="btn btn-primary btn-lg">Nuevo</button>
-                <button type="reset" class="btn btn-primary btn-lg">Eliminar</button>
+                <button id="id_btnGuardar" type="submit" class="btn btn-primary btn-lg">Guardar</button>
+                <button id="id_btnNuevo" type="reset" class="btn btn-primary btn-lg">Nuevo</button>
+                <button id="id_btnEliminar" type="reset" class="btn btn-primary btn-lg">Eliminar</button>
               </div>
             </div>
+
+            <div class="text-center px-lg-5 pt-lg-3 pb-lg-4 p-4 mt-auto w-100">
+              <p class="d-inline-block mb-0">¿Ya tienes una cuenta?</p> <a href="ingresar.html" 
+              class="text-blue font-weight-bold text-decoration-none">Ingresa aquí</a>
+            </div>
+
           </div>
         </div>
       </div>
@@ -166,8 +197,8 @@
             <th scope="col" style="font-weight: 1000; font-size: 20px;">RUT</th>
             <th scope="col" style="font-weight: 1000; font-size: 20px;">Nombre</th>
             <th scope="col" style="font-weight: 1000; font-size: 20px;">Apellido</th>
-            <th scope="col" style="font-weight: 1000; font-size: 20px;">Direccion</th>
-            <th scope="col" style="font-weight: 1000; font-size: 20px;">Con Subscripcion</th>
+            <th scope="col" style="font-weight: 1000; font-size: 20px;">Dirección</th>
+            <th scope="col" style="font-weight: 1000; font-size: 20px;">Con Subscripción</th>
             <th scope="col" style="font-weight: 1000; font-size: 20px;">Imagen</th>
             <th scope="col" style="font-weight: 1000; font-size: 20px;">Opciones</th>
           </tr>
